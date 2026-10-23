@@ -1,0 +1,203 @@
+{
+ "note": "Synthetic data only. These metrics do not establish real-world accuracy.",
+ "default": {
+  "summary": {
+   "pipeline_ids": [
+    "CG-DEMO-24IN-01"
+   ],
+   "run_a": "R2016",
+   "run_b": "R2023",
+   "date_a": "2016-01-15",
+   "date_b": "2023-01-15",
+   "years_between": 7.001,
+   "n_records_a": 266,
+   "n_records_b": 342,
+   "n_segments": 40,
+   "n_findings": 367,
+   "match_counts": {
+    "LIKELY_MATCH": 212,
+    "AMBIGUOUS": 29,
+    "UNMATCHED_EARLIER": 23,
+    "NEW_LATER": 95,
+    "EXCLUDED": 8
+   },
+   "issue_counts": {
+    "Error": 12,
+    "Warning": 8,
+    "Info": 1
+   },
+   "review_counts": {
+    "Routine review": 256,
+    "Verify match / data": 34,
+    "Review first": 33,
+    "Additional data needed": 29,
+    "Monitor": 15
+   },
+   "readiness": {
+    "counts": {
+     "MISSING_INPUTS": 41,
+     "VERIFY": 152,
+     "INPUTS_PRESENT": 174
+    },
+    "most_common_missing": {
+     "Pipe grade / SMYS": 25,
+     "Nominal wall thickness": 12,
+     "Defect depth (latest valid measurement)": 4
+    }
+   }
+  },
+  "evaluation": {
+   "matching": {
+    "likely": {
+     "predicted_pairs": 212,
+     "correct": 212,
+     "false_matches": 0,
+     "precision": 1.0
+    },
+    "ambiguous": {
+     "predicted_pairs": 29,
+     "correct": 29,
+     "false_matches": 0,
+     "precision": 1.0
+    },
+    "all_assigned": {
+     "predicted_pairs": 241,
+     "correct": 241,
+     "false_matches": 0,
+     "precision": 1.0
+    },
+    "true_pairs": 243,
+    "recall_all_assigned": 0.9917695473251029,
+    "recall_likely_only": 0.8724279835390947,
+    "missed_true_pairs": 2,
+    "new_later": {
+     "count": 95,
+     "truly_absent_in_earlier_run": 94,
+     "precision": 0.9894736842105263
+    },
+    "unmatched_earlier": {
+     "count": 23,
+     "truly_absent_in_later_run": 22,
+     "precision": 0.9565217391304348
+    }
+   },
+   "growth": {
+    "n": 195,
+    "baseline": {
+     "mae": 0.05726878865721204,
+     "rmse": 0.07141583618659204,
+     "bias": -0.004077269136596378
+    },
+    "shrinkage": {
+     "mae": 0.04178177906898566,
+     "rmse": 0.053571986995869916,
+     "bias": -0.004077269136596377
+    },
+    "baseline_interval_coverage": 0.9692307692307692,
+    "shrinkage_interval_coverage": 0.9538461538461539,
+    "k": 2.0,
+    "better_model": "shrinkage"
+   }
+  }
+ },
+ "no_alignment": {
+  "summary": {
+   "pipeline_ids": [
+    "CG-DEMO-24IN-01"
+   ],
+   "run_a": "R2016",
+   "run_b": "R2023",
+   "date_a": "2016-01-15",
+   "date_b": "2023-01-15",
+   "years_between": 7.001,
+   "n_records_a": 266,
+   "n_records_b": 342,
+   "n_segments": 40,
+   "n_findings": 370,
+   "match_counts": {
+    "LIKELY_MATCH": 192,
+    "AMBIGUOUS": 46,
+    "UNMATCHED_EARLIER": 26,
+    "NEW_LATER": 98,
+    "EXCLUDED": 8
+   },
+   "issue_counts": {
+    "Error": 12,
+    "Warning": 8,
+    "Info": 1
+   },
+   "review_counts": {
+    "Routine review": 248,
+    "Verify match / data": 48,
+    "Review first": 32,
+    "Additional data needed": 26,
+    "Monitor": 16
+   },
+   "readiness": {
+    "counts": {
+     "MISSING_INPUTS": 40,
+     "VERIFY": 172,
+     "INPUTS_PRESENT": 158
+    },
+    "most_common_missing": {
+     "Pipe grade / SMYS": 25,
+     "Nominal wall thickness": 12,
+     "Defect depth (latest valid measurement)": 3
+    }
+   }
+  },
+  "evaluation": {
+   "matching": {
+    "likely": {
+     "predicted_pairs": 192,
+     "correct": 191,
+     "false_matches": 1,
+     "precision": 0.9947916666666666
+    },
+    "ambiguous": {
+     "predicted_pairs": 46,
+     "correct": 41,
+     "false_matches": 5,
+     "precision": 0.8913043478260869
+    },
+    "all_assigned": {
+     "predicted_pairs": 238,
+     "correct": 232,
+     "false_matches": 6,
+     "precision": 0.9747899159663865
+    },
+    "true_pairs": 243,
+    "recall_all_assigned": 0.9547325102880658,
+    "recall_likely_only": 0.7860082304526749,
+    "missed_true_pairs": 11,
+    "new_later": {
+     "count": 98,
+     "truly_absent_in_earlier_run": 89,
+     "precision": 0.9081632653061225
+    },
+    "unmatched_earlier": {
+     "count": 26,
+     "truly_absent_in_later_run": 21,
+     "precision": 0.8076923076923077
+    }
+   },
+   "growth": {
+    "n": 174,
+    "baseline": {
+     "mae": 0.05789057001349356,
+     "rmse": 0.07216637816076406,
+     "bias": -0.003636033532778834
+    },
+    "shrinkage": {
+     "mae": 0.041755604703062076,
+     "rmse": 0.05402361852795931,
+     "bias": -0.004075374887430286
+    },
+    "baseline_interval_coverage": 0.9655172413793104,
+    "shrinkage_interval_coverage": 0.9482758620689655,
+    "k": 2.0,
+    "better_model": "shrinkage"
+   }
+  }
+ }
+}

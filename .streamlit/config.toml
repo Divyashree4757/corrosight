@@ -1,0 +1,32 @@
+# CorroSight theme: white workspace, navy sidebar, teal accents. Tokens mirror src/theme.py ("light" palette).
+[theme]
+base = "light"
+font = "Inter, 'Segoe UI', system-ui, sans-serif"
+baseRadius = "6px"
+showWidgetBorder = true
+primaryColor = "#1F9E92"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F6F8"
+textColor = "#14222E"
+linkColor = "#167A72"
+borderColor = "#DCE3E8"
+dataframeBorderColor = "#DCE3E8"
+dataframeHeaderBackgroundColor = "#F2F6F8"
+redColor = "#D64F45"
+orangeColor = "#C9861F"
+greenColor = "#1F9E92"
+blueColor = "#3E7CB1"
+
+[theme.sidebar]
+backgroundColor = "#0B1620"
+secondaryBackgroundColor = "#16293A"
+textColor = "#E6EEF2"
+borderColor = "#22394C"
+primaryColor = "#5FC8BE"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+port = 8502            # CorroSight opens at http://localhost:8502
+maxUploadSize = 50

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+outputs/*
+!outputs/.gitkeep
+!outputs/sample_evidence_passport.pdf
+!outputs/sample_findings.csv
+!outputs/evaluation_report.json
+.DS_Store
+instance/
+.streamlit/secrets.toml
+data/real_mendeley_raw/
+data/real_mendeley/real_ILI_large_*.csv
