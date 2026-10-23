@@ -28,5 +28,4 @@ primaryColor = "#5FC8BE"
 gatherUsageStats = false
 
 [server]
-port = 8502            # CorroSight opens at http://localhost:8502
 maxUploadSize = 50

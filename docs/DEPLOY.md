@@ -71,8 +71,8 @@ Streamlit Cloud redeploys automatically after each push.
 ## If the build or start fails
 
 - **Package error during build:** check that `requirements.txt` was pushed; then click **Reboot app**.
-- **App does not start and logs mention the port:** delete the line `port = 8502` from `.streamlit/config.toml`,
-  commit, and push. Locally, use `streamlit run app.py --server.port 8502` instead.
+- **Never set `port` in `.streamlit/config.toml`:** Streamlit Cloud must use its own port. Locally, choose the port
+  with `streamlit run app.py --server.port 8502`.
 - **"No user accounts are configured" on the sign-in page:** the secrets were not saved; paste them again under
   app > Settings > Secrets, then **Reboot app**.
 - **"Invalid username or password":** type the username (for example `engineer`), not the display name.

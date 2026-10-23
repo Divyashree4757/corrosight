@@ -35,7 +35,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 python -m src.synthetic_data      # optional: data/ already contains the generated demo files
 python -m src.auth demo           # first time only: creates 5 demo accounts, prints random passwords once
-streamlit run app.py              # opens http://localhost:8502 -> sign in
+streamlit run app.py --server.port 8502   # opens http://localhost:8502 -> sign in
 ```
 
 ### macOS / Linux (bash)
